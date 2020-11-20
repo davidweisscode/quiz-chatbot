@@ -1,0 +1,22 @@
+{
+  "name": "quiz-chatbot",
+  "version": "1.0.0",
+  "description": "Quiz chatbot for discord servers",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bot",
+    "discord",
+    "quiz"
+  ],
+  "author": "David Weiß",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.4.1",
+    "dotenv": "^8.2.0",
+    "html-entities": "^1.3.1",
+    "node-fetch": "^2.6.1"
+  }
+}
