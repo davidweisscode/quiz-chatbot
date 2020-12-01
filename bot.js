@@ -115,9 +115,9 @@ function askQuestion(channel) {
     }
     let quizRound = channel.quiz.shift();
     let multipleChoice = [];
-    multipleChoice.push(quizRound.correct_answer + " *");
+    multipleChoice.push(entities.decode(quizRound.correct_answer));
     quizRound.incorrect_answers.forEach(answer => {
-        multipleChoice.push(answer);
+        multipleChoice.push(entities.decode(answer));
     });
     shuffle(multipleChoice);
     const isCorrectAnswer = response => {
